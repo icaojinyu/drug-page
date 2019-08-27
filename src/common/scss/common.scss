@@ -1,0 +1,68 @@
+@import "var";
+
+.search {
+  display: flex;
+  width: 96%;
+  margin: 0 auto;
+  .el-input {
+    width: 180px;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    span {
+      margin-right: 10px;
+    }
+  }
+}
+
+.table {
+  width: 96%;
+  margin: 20px auto;
+  border: 1px solid #e8e8e8;
+  border-collapse: collapse;
+  text-align: center;
+  tr:first-child{
+    font-weight: bold;
+  }
+  th {
+    font-weight: bold;
+  }
+  th,td {
+    border: 1px solid #e8e8e8;
+    padding: 4px;
+
+    > span {
+      color: $color-theme;
+      cursor: pointer;
+    }
+  }
+}
+
+.pagination {
+  margin: 20px;
+}
+
+.compare {
+
+  .ctrl {
+    margin: 10px 30px 0 30px;
+    position: relative;
+    height: 28px;
+    .el-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .compare-table {
+    background: $color-theme;
+    color: #000;
+    margin-top: 0;
+  }
+}
+
+.no-data-tip {
+  margin: 10px 30px 0 30px;
+}
